@@ -6,7 +6,7 @@ from flask import Flask, request
 from flask import Flask, request, jsonify, render_template
 
 app=Flask(__name__)
-pickle_in = open("G:/Abroad/Durham_AI/Second_SEM/AI in Enterprise system_2004/Lab/fish.pkl","rb")
+pickle_in = open("fish.pkl","rb")
 classifier=pickle.load(pickle_in)
 
 @app.route('/')
